@@ -23,10 +23,9 @@ class VenuesController < ApplicationController
   def create
     @venue = Venue.new
 
-    @venue.neighborhood_id = params[:neighborhood_id]
     @venue.name = params[:name]
     @venue.address = params[:address]
-    @venue.neighborhoods = params[:neighborhoods]
+    @venue.neighborhood = params[:neighborhood]
 
     save_status = @venue.save
 
@@ -53,10 +52,9 @@ class VenuesController < ApplicationController
   def update
     @venue = Venue.find(params[:id])
 
-    @venue.neighborhood_id = params[:neighborhood_id]
     @venue.name = params[:name]
     @venue.address = params[:address]
-    @venue.neighborhoods = params[:neighborhoods]
+    @venue.neighborhood = params[:neighborhood]
 
     save_status = @venue.save
 

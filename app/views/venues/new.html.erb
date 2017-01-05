@@ -18,15 +18,6 @@
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
-      <!-- Label and input for neighborhood_id -->
-      <div class="form-group">
-        <label for="neighborhood_id" class="control-label">
-          Neighborhood
-        </label>
-
-        <input type="text" id="neighborhood_id" name="neighborhood_id" placeholder="Neighborhood" class="form-control" value="<%= @venue.neighborhood_id %>">
-      </div>
-
       <!-- Label and input for name -->
       <div class="form-group">
         <label for="name" class="control-label">
@@ -45,13 +36,13 @@
         <input type="text" id="address" name="address" placeholder="Address" class="form-control" value="<%= @venue.address %>">
       </div>
 
-      <!-- Label and input for neighborhoods -->
+      <!-- Label and input for neighborhood -->
       <div class="form-group">
-        <label for="neighborhoods" class="control-label">
-          Neighborhoods
+        <label for="neighborhood" class="control-label">
+          Neighborhood
         </label>
 
-        <input type="text" id="neighborhoods" name="neighborhoods" placeholder="Neighborhoods" class="form-control" value="<%= @venue.neighborhoods %>">
+        <input type="text" id="neighborhood" name="neighborhood" placeholder="Neighborhood" class="form-control" value="<%= @venue.neighborhood %>">
       </div>
 
       <button class="btn btn-success">
