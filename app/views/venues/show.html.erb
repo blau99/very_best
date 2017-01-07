@@ -5,17 +5,14 @@
 <div class="row">
   <div class="col-md-12 mb-2">
     <dl class="dl-horizontal">
-      <dt>Neighborhood</dt>
-      <dd><%= @venue.neighborhood_id %></dd>
-
       <dt>Name</dt>
       <dd><%= @venue.name %></dd>
 
       <dt>Address</dt>
       <dd><%= @venue.address %></dd>
 
-      <dt>Neighborhoods</dt>
-      <dd><%= @venue.neighborhoods %></dd>
+      <dt>Neighborhood</dt>
+      <dd><%= @venue.neighborhood %></dd>
 
     </dl>
 
@@ -143,15 +140,6 @@
 
       <!-- Label and input for venue_id -->
       <input type="hidden" name="venue_id" value="<%= @venue.id %>">
-
-      <!-- Label and input for date -->
-      <div class="form-group">
-        <label for="date" class="control-label">
-          Date
-        </label>
-
-        <input type="text" id="date" name="date" placeholder="Date" class="form-control" value="">
-      </div>
 
       <button class="btn btn-block btn-success">
         Create Bookmark

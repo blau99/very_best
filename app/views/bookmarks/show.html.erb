@@ -18,7 +18,7 @@
       <dd>
         <% if @bookmark.user.present? %>
           <a href="/users/<%= @bookmark.user_id %>">
-            <%= @bookmark.user.alice %>
+            <%= @bookmark.user.created_at %>
           </a>
         <% end %>
       </dd>
@@ -31,9 +31,6 @@
           </a>
         <% end %>
       </dd>
-
-      <dt>Date</dt>
-      <dd><%= @bookmark.date %></dd>
 
     </dl>
 
