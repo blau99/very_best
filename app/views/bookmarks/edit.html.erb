@@ -39,15 +39,6 @@
         <%= select_tag(:venue_id, options_from_collection_for_select(Venue.all, :id, :created_at, @bookmark.venue_id), :class => "form-control") %>
       </div>
 
-      <!-- Label and input for date -->
-      <div class="form-group">
-        <label for="date" class="control-label">
-          Date
-        </label>
-
-        <input type="text" id="date" name="date" placeholder="Date" class="form-control" value="<%= @bookmark.date %>">
-      </div>
-
       <button class="btn btn-warning">
         Update Bookmark
       </button>
